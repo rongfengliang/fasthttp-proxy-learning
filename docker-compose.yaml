@@ -1,0 +1,9 @@
+version: "3"
+services:
+  proxy: 
+    image: savsgio/kratgo
+    command: -config /etc/config.yaml
+    ports:
+    - "6081:6081"
+    volumes: 
+    - "./config.yaml:/etc/config.yaml"
